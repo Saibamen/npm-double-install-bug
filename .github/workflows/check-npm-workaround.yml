@@ -1,4 +1,4 @@
-name: Check NPM with new lock file
+name: Check NPM with workaround
 
 on:
   workflow_dispatch:
@@ -6,7 +6,7 @@ on:
   push:
 
 jobs:
-  check-npm-new-lock:
+  check-npm-workaround:
     runs-on: ubuntu-latest
 
     steps:
