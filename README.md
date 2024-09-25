@@ -4,10 +4,8 @@ Tested on Windows 10, NPM `10.8.3`, NodeJS `20.17.0`
 
 ## Steps
 
-```sh
-npm install
-npm ci
-```
+1. `npm install`
+2. `npm ci`
 
 ### Building with current lock file and `npm ci`
 
@@ -18,6 +16,8 @@ npm ci
 [![Check NPM with new lock file](https://github.com/Saibamen/npm-double-install-bug/actions/workflows/check-npm-new-lock.yml/badge.svg)](https://github.com/Saibamen/npm-double-install-bug/actions/workflows/check-npm-new-lock.yml)
 
 ## Annoying workaround
+
+[![Check NPM with workaround](https://github.com/Saibamen/npm-double-install-bug/actions/workflows/check-npm-workaround.yml/badge.svg)](https://github.com/Saibamen/npm-double-install-bug/actions/workflows/check-npm-workaround.yml)
 
 1. Delete `node_modules`
 2. `npm install`
