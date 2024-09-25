@@ -1,4 +1,4 @@
-name: Check NPM
+name: Check NPM with new lock file
 
 on:
   workflow_dispatch:
@@ -6,7 +6,7 @@ on:
   push:
 
 jobs:
-  check-npm:
+  check-npm-new-lock:
     runs-on: ubuntu-latest
 
     steps:
@@ -19,4 +19,8 @@ jobs:
       run: npm --version
     - name: Print NodeJS version
       run: node --version
+    - run: rm -f package-lock.json
+    - run: npm install
+    - run: rm -rf node_modules
+    - run: npm install
     - run: npm ci
