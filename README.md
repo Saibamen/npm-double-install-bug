@@ -39,7 +39,7 @@ npm error Missing: yaml@1.10.2 from lock file
 
 Just run `npm install` twice, no need to delete `node_modules`.
 
-[![Check NPM with workaround](https://github.com/Saibamen/npm-double-install-bug/actions/workflows/check-npm-workaround.yml/badge.svg)](https://github.com/Saibamen/npm-double-install-bug/actions/workflows/check-npm-workaround.yml)
+[![Check NPM with workaround v2](https://github.com/Saibamen/npm-double-install-bug/actions/workflows/check-npm-workaround-v2.yml/badge.svg)](https://github.com/Saibamen/npm-double-install-bug/actions/workflows/check-npm-workaround-v2.yml)
 
 1. `npm install`
 2. `npm install`
