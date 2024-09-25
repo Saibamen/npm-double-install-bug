@@ -1,0 +1,21 @@
+name: Check NPM with new lock file
+
+on:
+  workflow_dispatch:
+  pull_request:
+  push:
+
+jobs:
+  check-npm:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - uses: actions/setup-node@v4
+      with:
+        node-version: 20
+    - run: rm -f package-lock.json
+    - run: npm install
+    - run: npm ci
+    - run: npm run svelte-check
